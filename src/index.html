@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<title>Fuzzy Datalist</title>
+			<script src="../bower_components/platform/platform.js"></script>
+
+			<link rel="import" href="fuzzy-list.html">
+			<link rel="stylesheet" href="">
+
+			<style>
+				div {
+					color: #999;
+				}
+				fuzzy-list {
+					width: 33%;
+					margin: 2em 0;
+					display: block;
+				}
+				option {display: block;}
+			</style>
+	</head>
+	<body>
+		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, modi, quia, quisquam, officiis earum soluta nobis assumenda libero ut cumque ipsum distinctio temporibus molestias voluptatum dicta minima excepturi similique iusto!</div>
+		<form id="test" action="." type="GET">
+			<fuzzy-list selected-label="selected" filter-label="filter" list="api/endpoint">
+				<fuzzy-option value="1">One</fuzzy-option>
+				<fuzzy-option value="2">Two</fuzzy-option>
+				<fuzzy-option value="3">Three</fuzzy-option>
+				<fuzzy-option value="4">Four</fuzzy-option>
+				<fuzzy-option value="5">Five</fuzzy-option>
+				<fuzzy-option value="6">Six</fuzzy-option>
+				<fuzzy-option value="7">Seven</fuzzy-option>
+				<fuzzy-option value="8">Eight</fuzzy-option>
+			</fuzzy-list>
+		<button type="submit">send</button>
+		</form>
+		<script>
+			// document.querySelector('#test').addEventListener('submit', function (e) {
+			// 	e.preventDefault();
+			// 	console.log()
+			// });
+		</script>
+		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, quo, temporibus illo eaque nulla nam numquam repudiandae harum distinctio ad similique esse quibusdam ea. Repudiandae sapiente dolorem eius necessitatibus inventore.</div>
+		<div>Recusandae, soluta sit unde officiis dolores. Unde esse ratione aspernatur iusto quidem! Vitae, maiores iusto ducimus vel itaque accusantium quas ea quia alias! Vel, est, quisquam impedit perferendis laborum similique.</div>
+		<div>Commodi, culpa, harum, est eius recusandae exercitationem impedit sunt error totam iste facilis provident enim praesentium minus minima magnam obcaecati numquam debitis nostrum temporibus ipsum soluta suscipit atque quia expedita.</div>
+		<div>Aliquam, ipsum molestiae reiciendis consequatur repellendus iusto possimus molestias accusamus aperiam magnam temporibus asperiores quibusdam accusantium repudiandae delectus sequi eaque! Vitae, nulla qui explicabo minus placeat! Unde repudiandae recusandae voluptates.</div>
+		<div>Distinctio, hic repellat eius? Earum, possimus, suscipit, dignissimos, omnis ex sit in non ad numquam nihil aliquid corrupti fugit excepturi facilis molestiae officia ab voluptatem iure assumenda dicta vel modi?</div>
+		<div>Accusamus, veniam, quidem, aut mollitia quasi incidunt odit quam sint consequuntur ut tempore et suscipit reiciendis earum dolorem iste odio. Rerum, quasi, vitae culpa quis nobis aut fuga aliquid praesentium?</div>
+		<div>Beatae, sint, suscipit consectetur aperiam et accusamus optio eaque corrupti qui praesentium voluptatum quo tenetur ad nisi cumque perspiciatis ducimus pariatur exercitationem perferendis fugiat earum omnis eius natus unde voluptate.</div>
+		<div>Perspiciatis, quidem laudantium nisi dignissimos odio ratione inventore autem doloribus deleniti laboriosam minus praesentium suscipit rem ex quos ea deserunt labore culpa ullam laborum unde velit repellat dicta adipisci exercitationem.</div>
+		<div>Incidunt, doloribus, mollitia obcaecati blanditiis sapiente maiores reprehenderit eius molestiae natus nostrum earum quod tempora molestias deserunt ad tempore dignissimos quo voluptatum omnis maxime expedita eos nesciunt quis deleniti iusto!</div>
+		<div>Blanditiis, odio, amet, ea, velit ratione iusto minima animi repudiandae libero nisi sunt porro natus tempore impedit consequatur autem illo quo debitis quia id? Autem, ex vero perferendis esse fuga.</div>
+
+		<input list="datalist" />
+		<datalist id="datalist">
+			<option value="One"></option>
+			<option value="Two"></option>
+			<option value="Three"></option>
+			<option value="Four"></option>
+			<option value="Five"></option>
+			<option value="Six"></option>
+			<option value="Seven"></option>
+			<option value="Eight"></option>
+		</datalist>
+
+		<div>Dignissimos, blanditiis, incidunt odio a nesciunt necessitatibus laudantium temporibus maxime dolorum alias ut quos magni ipsam possimus nemo. Voluptas non porro consectetur eaque neque dicta sint fugiat aliquid alias accusamus.</div>
+		<div>Labore, nesciunt quam expedita odit pariatur blanditiis minus. Fugit, perspiciatis, obcaecati, soluta, ratione ab possimus non provident porro error vel amet itaque ipsam nostrum. Obcaecati sit magnam numquam nostrum culpa!</div>
+		<div>Consectetur vel rerum possimus dolor. Nisi, autem molestias neque pariatur soluta perferendis sunt maxime alias eveniet suscipit qui libero quo voluptas magni debitis adipisci odit amet placeat totam fugit. Enim!</div>
+		<div>Exercitationem, culpa, libero, voluptas, nihil impedit fugiat repellat reiciendis maxime odit temporibus obcaecati nam aliquam cupiditate magnam ab placeat dolores dicta quod voluptates quos repellendus adipisci nisi debitis iure veritatis.</div>
+		<div>Quos, ea, quae quam excepturi dicta dolorem illo quis itaque veritatis animi officia quisquam omnis perspiciatis adipisci soluta aliquam placeat ab ipsum harum pariatur molestias autem tempore amet! Molestias, sapiente?</div>
+		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, quo, temporibus illo eaque nulla nam numquam repudiandae harum distinctio ad similique esse quibusdam ea. Repudiandae sapiente dolorem eius necessitatibus inventore.</div>
+		<div>Recusandae, soluta sit unde officiis dolores. Unde esse ratione aspernatur iusto quidem! Vitae, maiores iusto ducimus vel itaque accusantium quas ea quia alias! Vel, est, quisquam impedit perferendis laborum similique.</div>
+		<div>Commodi, culpa, harum, est eius recusandae exercitationem impedit sunt error totam iste facilis provident enim praesentium minus minima magnam obcaecati numquam debitis nostrum temporibus ipsum soluta suscipit atque quia expedita.</div>
+		<div>Aliquam, ipsum molestiae reiciendis consequatur repellendus iusto possimus molestias accusamus aperiam magnam temporibus asperiores quibusdam accusantium repudiandae delectus sequi eaque! Vitae, nulla qui explicabo minus placeat! Unde repudiandae recusandae voluptates.</div>
+		<div>Distinctio, hic repellat eius? Earum, possimus, suscipit, dignissimos, omnis ex sit in non ad numquam nihil aliquid corrupti fugit excepturi facilis molestiae officia ab voluptatem iure assumenda dicta vel modi?</div>
+		<div>Accusamus, veniam, quidem, aut mollitia quasi incidunt odit quam sint consequuntur ut tempore et suscipit reiciendis earum dolorem iste odio. Rerum, quasi, vitae culpa quis nobis aut fuga aliquid praesentium?</div>
+		<div>Beatae, sint, suscipit consectetur aperiam et accusamus optio eaque corrupti qui praesentium voluptatum quo tenetur ad nisi cumque perspiciatis ducimus pariatur exercitationem perferendis fugiat earum omnis eius natus unde voluptate.</div>
+		<div>Perspiciatis, quidem laudantium nisi dignissimos odio ratione inventore autem doloribus deleniti laboriosam minus praesentium suscipit rem ex quos ea deserunt labore culpa ullam laborum unde velit repellat dicta adipisci exercitationem.</div>
+		<div>Incidunt, doloribus, mollitia obcaecati blanditiis sapiente maiores reprehenderit eius molestiae natus nostrum earum quod tempora molestias deserunt ad tempore dignissimos quo voluptatum omnis maxime expedita eos nesciunt quis deleniti iusto!</div>
+		<div>Blanditiis, odio, amet, ea, velit ratione iusto minima animi repudiandae libero nisi sunt porro natus tempore impedit consequatur autem illo quo debitis quia id? Autem, ex vero perferendis esse fuga.</div>
+		<div>Dignissimos, blanditiis, incidunt odio a nesciunt necessitatibus laudantium temporibus maxime dolorum alias ut quos magni ipsam possimus nemo. Voluptas non porro consectetur eaque neque dicta sint fugiat aliquid alias accusamus.</div>
+		<div>Labore, nesciunt quam expedita odit pariatur blanditiis minus. Fugit, perspiciatis, obcaecati, soluta, ratione ab possimus non provident porro error vel amet itaque ipsam nostrum. Obcaecati sit magnam numquam nostrum culpa!</div>
+		<div>Consectetur vel rerum possimus dolor. Nisi, autem molestias neque pariatur soluta perferendis sunt maxime alias eveniet suscipit qui libero quo voluptas magni debitis adipisci odit amet placeat totam fugit. Enim!</div>
+		<div>Exercitationem, culpa, libero, voluptas, nihil impedit fugiat repellat reiciendis maxime odit temporibus obcaecati nam aliquam cupiditate magnam ab placeat dolores dicta quod voluptates quos repellendus adipisci nisi debitis iure veritatis.</div>
+		<div>Quos, ea, quae quam excepturi dicta dolorem illo quis itaque veritatis animi officia quisquam omnis perspiciatis adipisci soluta aliquam placeat ab ipsum harum pariatur molestias autem tempore amet! Molestias, sapiente?</div>
+		<select>
+			<option value="One">One</option>
+			<option value="Two">Two</option>
+			<option value="Three">Three</option>
+			<option value="Four">Four</option>
+			<option value="Five"></option>
+			<option value="Six">Six</option>
+			<option value="Seven">Seven</option>
+			<option value="Eight">Eight</option>
+		</select>
+	</body>
+</html>

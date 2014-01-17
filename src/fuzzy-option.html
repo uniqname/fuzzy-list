@@ -1,0 +1,30 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<polymer-element name="fuzzy-option" attributes="value selected" constructor="fuzzyOption" >
+  <template>
+    <style>
+      :host {
+        padding: .125em .5em;
+      }
+      :host(:host[selected]) {
+        font-weight: bold;
+      }
+      :host(fuzzy-list) {
+        display: none;
+        font-family: sans-serif;
+        font-size: .8em;
+      }
+      :host(:host[data-matches]) {
+        display: block;
+      }
+      :host:hover,
+      :host:focus {
+        cursor: pointer;
+        background: hsl(211, 92.3077%, 84.7059%);
+      }
+    </style>
+    <content></content>
+  </template>
+  <script src="fuzzy-option.js">
+  </script>
+</polymer-element>

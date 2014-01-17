@@ -1,0 +1,98 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="fuzzy-option.html">
+
+<polymer-element name="fuzzy-list" constructor="FuzzyList" attributes="list mulitple tabIndex selected-label filter-label" >
+  <template>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      :host {
+        position: relative;
+        outline: none;
+      }
+
+      .dataSet {
+        display: none;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        position: absolute;
+        border: 1px solid #ccc;
+        overflow: auto;
+        max-height: 10em;
+        width: 100%;
+      }
+
+      :host(.alive:host) .dataSet {
+        display: block;
+      }
+      :host fuzzy-option:hover {
+        cursor: pointer;
+      }
+      fuzzy-option {
+        display: none;
+      }
+      #selectedList fuzzy-option:after {
+        content: 'x';
+        float: right;
+        font-weight: normal;
+        color: #ccc;
+      }
+      #selectedList fuzzy-option:not([selected]):after {
+        content: '';
+      }
+      .dataSet [selected] {
+        display: block;
+      }
+      #selectedList {
+        bottom: 100%;
+      }
+
+      #selectedList:before,
+      #filteredList:before {
+        font-size: .8em;
+        color: #ccc;
+        padding: .25em .5em;
+        display: block;
+        box-shadow: 1px 0 4px #eee;
+      }
+
+      #selectedList:before {
+        content: attr(selected-label);
+      }
+      #filteredList:before {
+        content: attr(filter-label);
+      }
+
+      #selectedList > *:not([selected]) {
+        opacity: 0;
+
+        -webkit-transition: opacity 1s .5s ease-in-out;
+           -moz-transition: opacity 1s .5s ease-in-out;
+            -ms-transition: opacity 1s .5s ease-in-out;
+             -o-transition: opacity 1s .5s ease-in-out;
+                transition: opacity 1s .5s ease-in-out;
+      }
+      #selectedList [selected] {
+        opacity: 1;
+      }
+
+      input {
+        margin: 0;
+        font-size: inherit;
+        width: 100%;
+      }
+    </style>
+    <!-- <ul id="selectedList" class="items" selected-label="{{selectedLabel}}"></ul> -->
+    <div id="selectedList" class="dataSet" selected-label="{{selectedLabel}}"></div>
+    <input id="input" on-focusin="showList" />
+    <div id="filteredList" class="dataSet" filter-label="{{filterLabel}}">
+      <content></content>
+
+    </div>
+  </template>
+  <script src="fuzzy-list.js">
+  </script>
+</polymer-element>

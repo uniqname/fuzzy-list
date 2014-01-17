@@ -1,0 +1,28 @@
+{
+  "name": "fuzzyDatalist",
+  "version": "0.0.1",
+  "authors": [
+    "Cory Brown <oh.wise.man@gmail.com>"
+  ],
+  "description": "A datalist polymer UI component featuring fuzzy search and persistant multi-select.",
+  "main": "fuzzylist.js",
+  "keywords": [
+    "datalist",
+    "fuzzy",
+    "search",
+    "polymer",
+    "multi-select"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "platform": "Polymer/platform#~0.1.1",
+    "polymer": "Polymer/polymer#~0.1.1"
+  }
+}
